@@ -35,14 +35,14 @@ class FrontPage(tk.Frame):
         label2 = tk.Label(self, text="Department of Electronics and Telecommunication", font="Times 40 ", bg="black", fg="white")
         label2.place(x=-18, y=160, width=1420, height=50)
 
-        label3 = tk.Label(self, text="~ A billing assistant", font="Times 26 bold italic", bg="black", fg="white")
+        label3 = tk.Label(self, text="- A BILLING ASSISTANT", font="Times 26 bold italic", bg="black", fg="white")
         label3.place(x=-27, y=519, width=1420, height=50)
 
         load = Image.open('veslogo.png')
         render = ImageTk.PhotoImage(load)
         img1 = tk.Label(image=render)
         img1.image = render
-        img1.place(x=380, y=37)
+        img1.place(x=380, y=337)
 
         #load = Image.open('veslogo.png')
         #render = ImageTk.PhotoImage(load)
@@ -57,7 +57,7 @@ class FrontPage(tk.Frame):
 
 
 
-        button1 = tk.Button(self, text="Grahak Sarthi",fg="blue",font="Times 90",bg="yellow",
+        button1 = tk.Button(self, text="Grahak Sarthi",fg="blue",font="Times 90",bg="yellow",activebackground="orange",
                             command=lambda: controller.show_frame(PageOne))
         button1.place(x=310, y=270)
 
@@ -76,17 +76,17 @@ class PageOne(tk.Frame):
         label7 = tk.Label(self, text="Welcome!", font="Times 30 bold ", bg="blue", fg="white")
         label7.place(x=-5, y=25, width=1370, height=50)
 
-        button2 = tk.Button(self, text="Weight", bg="white", fg="black", activebackground="green",
+        button2 = tk.Button(self, text="New", bg="white", fg="black", activebackground="green",
                          activeforeground="Yellow", bd="10",
-                         font="none 16 bold", height=0, width=18, padx="0", pady="0", wraplength=0,
+                         font="none 16 bold", height=0, width=10, padx="0", pady="0", wraplength=0,
                             command=lambda: controller.show_frame(FrontPage))
         button2.place(x=130, y=340)
-
-        button3 = tk.Button(self, text="Camera", bg="white", fg="black", activebackground="green",
+        
+        button3 = tk.Button(self, text="Back", bg="white", fg="black", activebackground="green",
                          activeforeground="white", bd="10",
-                         font="none 16 bold", height=0, width=18, padx="0", pady="0", wraplength=0,
-                            command=lambda: controller.show_frame(frontPage))
-        button3.place(x=130, y=410)
-
+                         font="none 16 bold", height=0, width=10, padx="0", pady="0", wraplength=0,
+                            command=lambda: controller.show_frame(FrontPage))
+        button3.place(x=1100, y=25)
+        
 app = gui()
 app.mainloop()
