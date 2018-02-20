@@ -38,17 +38,33 @@ class FrontPage(tk.Frame):
         label3 = tk.Label(self, text="- A BILLING ASSISTANT", font="Times 26 bold italic", bg="black", fg="white")
         label3.place(x=-27, y=519, width=1420, height=50)
 
-        load = Image.open('veslogo.png')
-        render = ImageTk.PhotoImage(load)
-        img1 = tk.Label(image=render)
-        img1.image = render
-        img1.place(x=380, y=337)
+        #load = Image.open('veslogo.png')
+        #render = ImageTk.PhotoImage(load)
+        #img1 = tk.Label(image=render)
+        #img1.image = render
+        #img1.place(x=380, y=337)
+
+        load = Image.open('veslogo.png')  # Image of Vivekanand College  Logo
+        photo = ImageTk.PhotoImage(load)
+        img4 = tk.Label(self,image=photo)
+        img4.image = photo
+        #img4.pack()
+        img4.place(x=390, y=37)
+
+
+
+        #self.image = tk.PhotoImage(file='veslogo.png')
+        #self.gmail = tk.Label(self, image=self.image)
+        #self.gmail.place(x=380, y=337)
+
+
 
         #load = Image.open('veslogo.png')
         #render = ImageTk.PhotoImage(load)
         #img50 = tk.Label(self, image=render, bg="black")
         #img50.image = render
         #img50.place(x=970, y=280)
+
         #self.photo62 = Image.open('veslogo.png')
         #self.photo63 = ImageTk.PhotoImage(self.photo62)
         #self.img64 = tk.Label(self, image=self.photo63)
@@ -75,6 +91,12 @@ class PageOne(tk.Frame):
 
         label7 = tk.Label(self, text="Welcome!", font="Times 30 bold ", bg="blue", fg="white")
         label7.place(x=-5, y=25, width=1370, height=50)
+
+        #load = Image.open('veslogo.png')  # Image of Vivekanand College  Logo
+        #render = ImageTk.PhotoImage(load)
+        #img4 = tk.Label(self, image=render, bg="black")
+        #img4.image = render
+        #img4.place(x=390, y=37)
 
         button2 = tk.Button(self, text="New", bg="white", fg="black", activebackground="green",
                          activeforeground="Yellow", bd="10",
